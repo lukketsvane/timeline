@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <advertiser>
+        <name>TE-byte UART Audio</name>
+        <advertisingInterval>100</advertisingInterval>
+        <serviceUUIDs>
+            <serviceUUID>6E400001-B5A3-F393-E0A9-E50E24DCCA9E</serviceUUID>
+        </serviceUUIDs>
+        <services>
+            <service uuid="6E400001-B5A3-F393-E0A9-E50E24DCCA9E">
+                <characteristics>
+                    <characteristic uuid="6E400003-B5A3-F393-E0A9-E50E24DCCA9E">
+                        <name>UART RX Characteristic</name>
+                        <properties>
+                            <read>true</read>
+                            <write>true</write>
+                            <notify>true</notify>
+                        </properties>
+                        <permissions>
+                            <readEncryption>false</readEncryption>
+                            <writeEncryption>false</writeEncryption>
+                        </permissions>
+                        <parser>UTF-8</parser>
+                    </characteristic>
+                </service>
+            </services>
+        </attribute-table>
+    </service>
+</advertiser>
